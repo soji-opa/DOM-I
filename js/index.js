@@ -40,3 +40,55 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//working on the links
+
+let links = document.getElementsByTagName('a')
+links[0].textContent = siteContent["nav"]["nav-item-1"] 
+links[1].textContent = siteContent["nav"]["nav-item-2"] 
+links[2].textContent = siteContent.nav["nav-item-3"]
+links[3].textContent = siteContent.nav["nav-item-4"]
+links[4].innerText = siteContent.nav["nav-item-5"]
+links[5].innerHTML = siteContent.nav["nav-item-6"]
+
+// working on first section
+
+let h1Title = document.querySelector('h1')
+h1Title.textContent = siteContent.cta.h1
+
+let btnTitle = document.querySelector('button')
+btnTitle.textContent = siteContent.cta.button
+
+let imgHeader = document.getElementById("cta-img")
+imgHeader.setAttribute('src', siteContent.cta["img-src"])
+
+//working on main section
+
+let h4Text = document.getElementsByTagName('h4')
+h4Text[0].textContent = siteContent["main-content"]["features-h4"]
+h4Text[1].textContent = siteContent["main-content"]["about-h4"]
+h4Text[2].textContent = siteContent["main-content"]["services-h4"]
+h4Text[3].textContent = siteContent["main-content"]["product-h4"]
+h4Text[4].textContent = siteContent["main-content"]["vision-h4"]
+
+let pText = document.querySelectorAll('p')
+pText[0].textContent = siteContent["main-content"]["features-content"]
+pText[1].textContent =siteContent["main-content"]["about-content"]
+pText[2].textContent = siteContent["main-content"]["services-content"]
+pText[3].textContent = siteContent["main-content"]["product-content"]
+pText[4].textContent = siteContent["main-content"]["vision-content"]
+
+let imgMiddle = document.getElementById("middle-img")
+imgMiddle.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// working on footer
+
+h4Text[5].textContent = siteContent.contact["contact-h4"]
+pText[5].textContent = siteContent.contact.address
+pText[6].textContent =siteContent.contact.phone
+pText[7].textContent = siteContent.contact.email
+
+pText[8].textContent = siteContent.footer.copyright
+
+// let footerText  = document.getElementsByTagName('footer')
+// footerText.innerText = siteContent.footer.copyright
