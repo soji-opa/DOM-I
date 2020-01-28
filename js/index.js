@@ -51,6 +51,8 @@ links[3].textContent = siteContent.nav["nav-item-4"]
 links[4].innerText = siteContent.nav["nav-item-5"]
 links[5].innerHTML = siteContent.nav["nav-item-6"]
 
+
+
 // working on first section
 
 let h1Title = document.querySelector('h1')
@@ -92,3 +94,20 @@ pText[8].textContent = siteContent.footer.copyright
 
 // let footerText  = document.getElementsByTagName('footer')
 // footerText.innerText = siteContent.footer.copyright
+
+//create element
+
+let newVar = document.createElement('a')
+newVar.textContent = "Home"
+
+let lastanchorElement = document.createElement('a')
+lastanchorElement.textContent = "Log Out"
+
+let parentElement = document.querySelector('nav')
+
+parentElement.prepend(newVar)
+parentElement.append(lastanchorElement)
+
+Array.from(links).forEach((element)=>{
+  element.style.color = "green"
+})
